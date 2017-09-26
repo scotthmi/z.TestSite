@@ -35,6 +35,7 @@ add_action( 'wp_enqueue_scripts', 'hmi_theme_styles' );
 
 function hmi_theme_scripts() {
     wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
+    wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/js/angular.min.js', array('jquery'), '', true );
     wp_enqueue_script( 'menu', get_template_directory_uri() . '/js/menu.js', array( 'jquery' ), '2.1.3', true );
     
 }
@@ -46,8 +47,6 @@ add_action( 'wp_enqueue_scripts', 'hmi_theme_scripts' );
 // custom post type function
 
 function create_posttype() {
-
- 
 
     register_post_type( 'dogs',
 
@@ -77,14 +76,7 @@ function create_posttype() {
 
 
 
-
-
-/*
-
-* Creating a function to create our CPT
-
-*/
-
+// Creating a function to create our CPT
  
 
 function custom_post_type() {

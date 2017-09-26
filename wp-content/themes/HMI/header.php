@@ -13,13 +13,15 @@
 
   <header class="main-header">
       <div class="container clearfix">
-        <h1 class="name"><a href="http://localhost:8888/">HMI Theme</a></h1>
+<!-----
 
-      <!-- the code inside is where the logo should go
+        <h1 class="name"><a href="http://localhost:8888/">HMI Theme</a></h1>
+---->
       
-  <img class="logo" src="http://localhost:8888/wp-content/uploads/2017/05/Logo-150dpi-Dark-1.png">
+      
+  <a href="http://localhost:8888/"><img id="logo" src="/images/hm-logo.png"></a>
   
-  -->
+  
 
 
       

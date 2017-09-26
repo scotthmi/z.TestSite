@@ -49,6 +49,10 @@ body {
   margin: 0;
 }
 
+#logo {
+  width: 30%;
+}
+
 .name a {
   color: #fff;
   display: inline-block;
@@ -142,13 +146,26 @@ width:15px;
 
 
 #banner {
+  background-image: url('/images/hero-1.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  top: 0;
+  padding: 15em 0;
   width: 100%;
   text-align: center;
 
+}
+
+#banner-text {
+  color: #fff;
+  font-size: 3em;
+
+}
+
+.intro-text {
+  font-size: 2em;
+  text-align: center; 
+  color: #4f426a;
 }
 
 .hero-heading {
