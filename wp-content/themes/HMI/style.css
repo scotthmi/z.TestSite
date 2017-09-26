@@ -1,0 +1,227 @@
+/*
+Theme Name: HMI
+Author: Scott McMurry
+Author URI: https://scottmcmurry.com/
+Description: A modern, simple, responsive theme designed by Scott McMurry
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Single Page Template
+ 
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic);
+
+* {
+
+  box-sizing:border-box;
+}
+
+p,
+span {
+
+  font-size: 1.5em;
+}
+
+h1 {
+font-size: 2.5em;
+
+}
+
+h2 {
+  font-size: 2em;
+
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  padding-top: 0px;
+
+}
+
+/* ---- Navigation ---- */
+
+.name {
+  color: #fff;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.name a {
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+
+}
+
+  
+
+
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0);
+}
+
+.menu {
+  text-align: right;
+  padding-right: 20px;
+  font-size: 33px;
+}
+
+#burgMenu {
+  top: 15px;
+  right: 5%;
+  position: absolute;
+}
+
+.burg1, .burg2, .burg3 {
+    width:45px;
+    height:5px;
+    background-color: #fff;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#burgMenu.burg1:hover {
+width:15px;
+}
+
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 80px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.row {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+#banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  width: 100%;
+  text-align: center;
+
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 3.2em;
+  margin-bottom: 0;
+
+}
+
+
+#custom-post-type {
+  width: 100%; 
+  background-color: #fff;
+  margin-top: -20px;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+}
+
+
+.main-footer {
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  padding: .5rem;
+  background-color: #D6D6D6;
+  text-align: center;
+
+
+}
+
+
+
+/* ================================
+  Media Queries
+  ================================= */
+
+  @media (min-width: 769px) {
+
+  body {
+    padding-top: 0px;
+  }    
+
+
+  .main-header {
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+    /* box-shadow: 0 1px 4px rgba(0,0,0,.4); */
+    width: 100%;
+    top: 0;
+    z-index: 3;
+  }
+
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
