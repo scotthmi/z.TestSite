@@ -25,6 +25,9 @@
   <div id="banner">
   <span id="banner-text"><strong>MAKE IT INTERESTING</strong></span>
 </div>
+
+
+</div>
 </div>
 
 <div class="container" style="padding-top: 50px;">
