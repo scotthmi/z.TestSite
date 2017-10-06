@@ -8,7 +8,6 @@
 
     <?php wp_head(); ?>
 
-
   </head>
 
   <header class="main-header">
@@ -19,7 +18,7 @@
 ---->
       
       
-  <a href="http://localhost:8888/"><img id="logo" src="/images/hm-logo.png"></a>
+  <a href="http://localhost:8888/"><img class="logo" src="/images/hm-logo.png"></a>
   
   
 
@@ -48,7 +47,8 @@
 
   <body <?php  body_class(); ?>>
 
-  
+
+
  
     
     
